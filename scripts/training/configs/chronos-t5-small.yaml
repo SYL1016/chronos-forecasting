@@ -1,9 +1,12 @@
 training_data_paths:
-- "/home/ubuntu/tsmixup-data.arrow"
-- "/home/ubuntu/kernelsynth-data.arrow"
+  - "/content/drive/My Drive/Chronos/battery_train_data.arrow"
+  - "/content/drive/My Drive/Chronos/battery_test_data.arrow"
 probability:
-- 0.9
-- 0.1
+  - 1.0  # 使用一个数据集时，概率设置为 1.0
+
+# probability:
+# - 0.9
+# - 0.1
 context_length: 512
 prediction_length: 64
 min_past: 60
